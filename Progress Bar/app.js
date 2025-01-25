@@ -28,6 +28,7 @@ prevBtn.addEventListener("click", () => {
 function updateUI() {
   circles.forEach((circle, index) => {
     if (index < activeIndex) {
+      //agar index kam active index se toh mtlb pichle vaale circles active hain tabhi hum active class ko add kar rhe hain
       circle.classList.add("active");
     } else {
       circle.classList.remove("active");
@@ -36,7 +37,7 @@ function updateUI() {
 
   const actives = document.querySelectorAll(".active");
   progress.style.width =
-    ((actives.length - 1) / (circles.length - 1)) * 100 + "%";
+    ((actives.length - 1) / (circles.length - 1)) * 100 + "%"; //progress bar ko color de rhe hain
 
   if (activeIndex === 1) {
     prevBtn.disabled = true;
