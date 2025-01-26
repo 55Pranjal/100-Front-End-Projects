@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Pop-up</title>
+  </head>
+  <body>
+    <header>
+      <div class="content-container">
+        <h1>Welcome to the Real World</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          voluptates asperiores quis suscipit consequuntur. Nobis modi error,
+          impedit quis eius recusandae voluptatum ipsam dolorem nihil magni,
+          quod obcaecati delectus voluptas?
+        </p>
+        <button class="cta-btn" id="open">Sign Up</button>
+      </div>
+    </header>
+
+    <section class="modal-container" id="modal">
+      <section class="modal">
+        <button class="close-btn" id="close">x</button>
+        <div class="modal-content">
+          <h1>Sign Up</h1>
+          <form action="" class="modal-form">
+            <div>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name check"
+                class="form-input"
+                placeholder="Enter name"
+              />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="text"
+                id="email check"
+                class="form-input"
+                placeholder="Enter Email"
+              />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input
+                type="text"
+                id="password check"
+                class="form-input"
+                placeholder="Enter Password"
+              />
+            </div>
+            <div>
+              <label for="password2">Confirm Password</label>
+              <input
+                type="text"
+                id="password2 check"
+                class="form-input"
+                placeholder="Enter Password"
+              />
+            </div>
+            <input type="submit" value="Submit" class="submit-btn" />
+          </form>
+        </div>
+      </section>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -22,7 +22,7 @@ body {
   width: calc(100vw + 60px);
   height: calc(100vh + 60px);
   z-index: -1;
-  fill: blue(0);
+  fill: blur(0);
 }
 
 .loading-text {
