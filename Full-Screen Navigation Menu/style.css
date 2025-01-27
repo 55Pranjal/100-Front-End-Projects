@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #333;
+  background-color: teal;
+}
+/* Menu Start */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  background-image: url(https://images.unsplash.com/photo-1554050857-c84a8abdb5e2?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmxhY2t8ZW58MHx8MHx8fDA%3D);
+  background-size: cover;
+  clip-path: circle(20px at calc(100vw - 5vw) 31px);
+  transition: clip-path 0.5s;
+}
+
+.menu li {
+  position: relative;
+  z-index: 5;
+}
+
+.menu a {
+  text-decoration: none;
+  color: teal;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  display: inline-block;
+  width: 120px;
+  padding: 5px;
+}
+
+.btn {
+  position: absolute;
+  top: 20px;
+  left: calc(100vw - 5vw);
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.btn > span {
+  width: 3px;
+  height: 3px;
+  display: block;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-bottom: 1px;
+}
+
+.highlight {
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  background-color: white;
+  transition: transform 0.3s;
+}
+/* Menu End */
+
+/* Image Container Start */
+.image-container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+  border: 3px solid white;
+}
+
+.img-one {
+  background-image: url(https://images.unsplash.com/photo-1454789548928-9efd52dc4031?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3BhY2V8ZW58MHx8MHx8fDA%3D);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-two {
+  background-image: url(https://images.unsplash.com/photo-1501862700950-18382cd41497?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNwYWNlfGVufDB8fDB8fHww);
+  background-size: cover;
+  background-position: center;
+}
+/* Image Container End */
+
+/* Headings Start */
+.container {
+  padding: 0 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  padding: 20px 0;
+}
+
+article > h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.para {
+  max-width: 700px;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  line-height: 22px;
+}
+
+/* Headings End */
