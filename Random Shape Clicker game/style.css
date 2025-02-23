@@ -1,0 +1,24 @@
+body {
+  background: black;
+  color: white;
+}
+
+/* JS */
+
+.message {
+  text-align: center;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 50px;
+  left: 20%;
+  background-color: cornsilk;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  line-height: 100px;
+}
